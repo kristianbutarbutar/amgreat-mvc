@@ -1,0 +1,206 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<html>
+<head>
+	<title>AMGREAT</title>
+	<style>
+		body {border:0px solid; color:black; margin:0px; padding:0px; background-color: #e6f7ff;font-family: "Times New Roman", Times, serif;}
+		table {margin:0px; padding:0px;font-size:14px;background-color:#FFFFFF;}
+		.tcenter{text-align:center;}
+		.tleft{text-align:left;}
+		.tright{text-align:right;}
+		.b{font-weight: bold;}
+		.br-0 { border:0px solid; color:black;}
+		.br-1 { border:1px solid; color:black;}
+		.p-0 {padding:0px;}
+		.p-1 {padding:1px;}
+		.p-2 {padding:2px;}
+		.p-3 {padding:3px;}
+		.m-0 {margin:0px;}
+		.m-1 {margin:5px;}
+		.w-1{width:100%;margin:0px;}
+		.w-2{width:49.5%;margin:0px;}
+		.w-3{width:33%;margin:0px;}
+		.w-4{width:25%;margin:0px;}
+		.w-5{width:20%;margin:0px;}
+		.mauto{border:1px solid #c0c0c0;}
+		div.inrow{float:none; margin:3px;text-align:left;}
+		.bstyle1{border-radius:5px;border:0px solid;color:black;padding:3px;margin:3px;}
+		.bstyle1right{border-radius:5px;border:0px solid;color:black;padding:3px;margin:0px;text-align:right;width:41%;}
+		.bstyle1left{width:55%;border-radius:5px;border:0px solid;color:black;padding:3px;margin:3px;}
+		.bstyle2{border-radius:10px;border:1px solid;color:black;padding:3px;}
+		.bstyle3{border-radius:15px;border:1px solid;color:black;padding:3px;}
+		.clearBoth { clear:both; }
+		.mainbg{opacity: 1;background-color:#99ebff;width:100%; height:10%;margin:0px;}
+		.footermnu{padding-left:150px;}
+		.flexdiv{display: flex; justify-content: space-between;}
+		.pageheader { position:absolute; top:0px; display:inline-block;}
+		.headerwidth {position:fixed;width:100%;background-color:#FFFFFF;}
+		div.inline{display:inline-block; margin-left:0px;}
+		.liner{text-align:right;}
+		.linel{text-align:left;}
+		.linec{text-align:center;}
+		@media only screen and (max-width:650px) {
+			.mainbg{background-color:#e6f7ff;width:100%;margin:0px;}
+		 	body { background-color: #e6f7ff; }
+		    div.inline{float:none; margin-left:auto;text-align:left;}
+		    div.inrow{float:none; margin:3px;text-align:left;}
+		    table { border:0px solid; color:black; margin:0px; padding:3px;font-size:14px;}
+		    .footermnu{padding-left:3px;}
+		    .w-1{width:100%;margin:0px;}
+			.w-2{width:48%;margin:0px;}
+			.w-3{width:33%;margin:0px;}
+			.w-4{width:25%;margin:0px;}
+			.w-5{width:20%;margin:0px;}
+			.bstyle1{border-radius:5px;border:0px solid;color:black;padding:3px;}
+			.bstyle2{border-radius:10px;border:0px solid;color:black;padding:3px;}
+			.bstyle3{border-radius:15px;border:0px solid;color:black;padding:3px;}
+			.flexdiv{display: block; justify-content: flex-start;}
+			.bstyle1right{width:100%;border-radius:5px;border:0px solid;color:black;padding:3px;margin:3px;}
+			.bstyle1left{width:100%;border-radius:5px;border:0px solid;color:black;padding:3px;margin:3px;}
+		}
+		
+	</style>
+</head>
+<body>	
+		<div id="topMenu" class="pageheader">test</div>
+	 	<table class="w-1">
+			<tr height="50px" id="topRow">
+				<td class="w-1 m-0">
+					<div class="inline w-2" id="m1"></div>
+					<div class="inline w-2 liner" id="m5"></div> 
+				</td>
+			</tr>
+			<tr height="500px"><td class="w-1 br-0 p-3" style="background-color:#e6f7ff;"> <div id="m2"></div></td></tr>
+			<tr class="tcenter"><td class="w-1 br-0 p-3"> <div id="m3" class="footermnu"></div></td></tr>
+			<tr height="2px" class="tcenter"><td class="br-0 p-3"> &copy; AMGREAT 2019  </td></tr>
+		</table>
+</body>
+</html>
+
+<script language="javascript">
+	
+	// top menu json
+	var __z1 = {
+				menus:[
+					{label:"Home",url:"url1"},
+					{label:"Product and Services",url:"url2"},
+					{label:"Contact",url:"url3"},
+					{label:"Founder",url:"url4"},
+					{label:"News",url:"url5"}
+				] 
+			};
+	
+	var __z5 = {
+				menus:[
+					{label:"Search",url:"url1"},
+					{label:"Chat",url:"url2"},
+					{label:"Login",url:"url3"},
+				] 
+			};
+			
+	// content menu json
+	var __z2 = {"content":"displayed will be based selected navigation"};
+	
+	// footer menu json
+	var __z3 = {menus:[{label:"Business Applications",list:
+							[
+								{label:"ERP",url:"url1"}, 
+								{label:"HCM",url:"url2"}, 
+								{label:"e-Commerce",url:"url1"}, 
+								{label:"Finance",url:"url1"}, 
+								{label:"Inventory",url:"url1"}, 
+								{label:"Logistic",url:"url1"}, 
+								{label:"Portal",url:"url1"}, 
+								{label:"Control and Monitoring Center",url:"url1"}
+							]
+						},
+	                   {label:"Tutorial", list:
+	                   	[
+	                   		{label:"Java",url:"url1"},
+	                   		{label:"C++",url:"url2"}, 
+	                   		{label:"Python",url:"url1"}, 
+	                   		{label:"Go",url:"url1"}
+	                   	]
+	                   	},
+	                   {label:"Architectural Pattern", list:
+	                   	[
+	                   		{label:"Layered Pattern",url:"https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013"},
+	                   		{label:"Client Server Pattern",url:"url2"}, 
+	                   		{label:"Master-slave pattern",url:"url1"},
+	                   		{label:"Pipe-filter pattern",url:"url1"}, 
+	                   		{label:"Broker pattern",url:"url1"}, 
+	                   		{label:"Peer to Peer pattern",url:"url1"}, 
+	                   		{label:"Event Bus pattern",url:"url1"}, 
+	                   		{label:"MVC pattern",url:"url1"}, 
+	                   		{label:"Blackboard pattern",url:"url1"}, 
+	                   		{label:"Interpreter pattern",url:"https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013"}
+	                   	]
+	                   	},
+	                   {label:"Architectural Pattern", list:
+	                   	[
+	                   		{label:"Layered Pattern",url:"https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013"},
+	                   		{label:"Client Server Pattern",url:"url2"}, 
+	                   		{label:"Master-slave pattern",url:"url1"},
+	                   		{label:"Pipe-filter pattern",url:"url1"}, 
+	                   		{label:"Broker pattern",url:"url1"}, 
+	                   		{label:"Peer to Peer pattern",url:"url1"}, 
+	                   		{label:"Event Bus pattern",url:"url1"}, 
+	                   		{label:"MVC pattern",url:"url1"}, 
+	                   		{label:"Blackboard pattern",url:"url1"}, 
+	                   		{label:"Interpreter pattern",url:"https://towardsdatascience.com/10-common-software-architectural-patterns-in-a-nutshell-a0b47a1e9013"}
+	                   	]
+	                   	}
+	                   ]
+	           };
+	// left menu menu json
+	var __z4 = {menus:[{"Home":"url1","Product and Services":"url2","Contact":"url3","Founder":"url4", "News":"url5"}]};
+	
+	//const jsonObject = JSON.parse(jsonString);
+	/*
+	for (const child in parent) {
+    if (typeof parent[child] === "object") {
+      iterateObject(parent[child]);
+    } else {
+      console.log(`${child}: ${parent[child]}`);
+    }
+  }
+  var encodedStr = rawStr.replace(/[\u00A0-\u9999<>\&]/g, function(i) {
+   		return '&#'+i.charCodeAt(0)+';';
+	});
+  */
+  
+	let __viewm1 = function(__arr, __id){
+		if(Object.keys(__arr).length > 0 && __arr.constructor === Object){
+			for(var el of __arr.menus) {
+				document.getElementById(__id).innerHTML += "<div class='inline bstyle1'>" + el.label + "</div>";
+			}
+		}
+	}; __viewm1(__z1, "m1"); __viewm1(__z5, "m5");
+	
+	let __viewm2 = function(__arr, __id){
+		if(Object.keys(__arr).length > 0 && __arr.constructor === Object){
+			var _t = "";
+			for(var el of __arr.menus) {
+				if(Object.keys(el).length > 0 && el.constructor === Object){
+					var __temp = "";
+					for(var l of el.list) {
+						__temp+="<div class='inrow bstyle1'>" + l.label + "</div>";
+					}		
+				}
+				_t += "<div class='bstyle1 inline w-5 br-1' style='text-align:left;'><span class='b'>" + el.label + "</span></br>"+ __temp +"</div>";
+			}
+			document.getElementById(__id).innerHTML +=_t;
+		}
+	}; __viewm2(__z3, "m3");
+	
+	window.onscroll = function() {myFunction();};
+
+	function myFunction() {
+	  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	    document.getElementById("topMenu").innerHTML = document.getElementById("topRow").innerHTML;
+	  } else if (document.body.scrollTop < 50) {
+	    document.getElementById("topMenu").innerHTML = "";
+	  }
+	}
+
+</script>

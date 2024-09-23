@@ -1,0 +1,65 @@
+<div class="grp m-0 p-0">
+							 <div class="grp">
+							  	<div for="fname" class="label-l1">checkbox</div>
+								<div class="noneditable" onclick="__fpick(this,event);" id="__checkbox"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="_date" class="label-l1">date</div>
+							  	<div class="noneditable"  onclick="__fpick(this,event);" id="__date"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">textarea</div>
+							  	<div class="editable"  onclick="__fpick(this,event);" id="__txtarea">bbb</div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">datetime-local</div>
+							  	<div type="datetime-local" class="noneditable"  onclick="__fpick(this,event);" id="__datetime"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">email</div>
+							  	<div type="email" class="editable" contentEditable='true' id="__email"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">file</div>
+							  	<div type="file" class="noneditable"  onclick="__fpick(this,event);" id="__file"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">image</div>
+							  	<div type="image" class="noneditable" onclick="__fpick(this,event);" id="__image"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">month</div>
+							  	<div type="month" class="noneditable" onclick="__fpick(this,event);" id="__month"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">number</div>
+							  	<div type="text" class="editable" contentEditable='true' id="__image"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">password</div>
+							  	<div type="password" class="editable" contentEditable='true' id="__password"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">tel</div>
+							  	<div type="tel" class="editable" contentEditable='true' id="lname"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="lname" class="label-l1">text</div>
+							  	<div type="text" class="editable" contentEditable='true' id="lname"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="time" class="label-l1">time</div>
+							  	<div type="time" class="noneditable" onclick="__fpick(this,event);" id="__image"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="time" class="label-l1">url</div>
+							  	<div type="url" class="noneditable" contentEditable='true' id="lname"></div>
+							  </div>
+							  <div class="grp">
+							  	<div for="time" class="label-l1" class="label-l1">week</div>
+							  	<div type="week" class="noneditable" onclick="__fpick(this,event);" id="__image"></div>
+							  </div>
+							  <div class="grp">
+							  	<div type="button" class="btn" id="lname">Button</div>
+							  </div>
+						</div>
