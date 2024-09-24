@@ -25,7 +25,7 @@ public class UtilityServices {
 				
 				Record record = new Record(); Record rr = record ; int idx = 0 ;
 				
-				StringVO[] rows = new StringVO[vo.getRecNo()];
+				StringVO[] rows = new StringVO[ vo.getRecNo() ];
 				
 				while( rv != null ) {
 										
@@ -35,7 +35,6 @@ public class UtilityServices {
 				}
 				
 				r.setRows(rows);
-				
 			}
 		} catch (Exception e) {
 			System.out.println("[UtilityServices.wrapSelectively] : " + e.getMessage() );

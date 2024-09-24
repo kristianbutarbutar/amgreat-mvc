@@ -12,7 +12,8 @@
 	<style>
 		.box-1.contain{ border:0.2px solid #c0c0c0; border-radius:5px; width:100%; height:100%; margin-top:0px;margin-bottom:0px;margin:auto;}
 		.box-1.play{ border:0.2px solid #c0c0c0; border-radius:5px; height:95%; width:95%; margin-left:auto; margin-right:auto;margin-top:1.5%;}
-		
+		.linkcss{cursor:pointer;}
+		.linkcss:before{content:'\26AC  ';}
 		@media only screen and (max-width: 600px) {
 			.box-1.contain{ border:0.2px solid #c0c0c0; border-radius:5px; width:90%; height:50%; margin-top:0px;margin-bottom:0px;}
 			.box-1.play{ border:0.2px solid #c0c0c0; border-radius:5px; height:95%; width:85%; margin-left:auto; margin-right:auto;margin-top:1.5%;}
@@ -118,6 +119,7 @@
 		
 		//document.getElementById( __id ).innerHTML = JSON.stringify( __o.rows );
 		
+		/*
 		for (var idx in __o.rows ) {
 			var _row = __o.rows[idx];
 			var _row_row = JSON.parse( _row.row );
@@ -125,6 +127,10 @@
 			document.getElementById( __id ).innerHTML += _row_row.__ID + "<br/>";
 			document.getElementById( __id ).innerHTML += '<img src = "http://localhost:8091/svg/check-2.svg"/>' + _row_row.__LABEL+ "<br/>";
 			document.getElementById( __id ).innerHTML += _row_row.__ICONID+ "<br/>";
+		}*/
+		
+		for (var idx in __o.rows ) {
+			document.getElementById( __id ).innerHTML += __o.rows[idx].row ;
 		}
 	};
 	
