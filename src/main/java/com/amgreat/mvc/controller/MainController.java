@@ -29,9 +29,9 @@ public class MainController {
 		return "console";
 	}
 	
-	@RequestMapping(value = "/amgreat/ui/{pageId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/amgreat/portal/{pageId}", method = RequestMethod.GET)
 	public String uri( Map<String, Object> model, @PathVariable String pageId ) {
 		model.put("__content", pageId);
-		return "console";
+		return "s"+pageId;
 	}
 }

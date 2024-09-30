@@ -21,10 +21,25 @@ public class CacheServices implements CacheServicesInterface {
 	
 	@Value("${int.page.uri}")
 	private String intPageUri;
+
+	@Value("${integrator.html.uri}")
+	private String intHtmlUri;
 	
 	@Bean
 	public RestTemplate restTemplate() {
 	    return new RestTemplate();
+	}
+	
+	public PageVO cacheHtml(PageVO vo) {
+		PageVO r = null;
+			try {
+				if ( vo != null ) {
+					r = restTemplate().postForObject( intHtmlUri+vo.getPar(), vo, PageVO.class );
+	            }
+			} catch (Exception e) {
+				System.out.println("[CacheServices.cacheIt.AttributeVO] : " + e.getMessage() );
+			}
+			return r;
 	}
 	
 	public AttributeVO cacheIt(AttributeVO vo) {

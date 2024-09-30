@@ -5,7 +5,10 @@ public class RequestVO extends VO {
 	private RequestVO next = null;
 	private RequestVO filter = null;
 	private String cmdString;
+	private String url;
 	
+	public String getUrl() { return url; }
+	public void setUrl(String url) { this.url = url; }
 	private String selective;
 	public String getSelective() { return selective; }
 	public void setSelective(String selective) { this.selective = selective; }

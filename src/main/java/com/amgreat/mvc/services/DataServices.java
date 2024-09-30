@@ -40,9 +40,7 @@ public class DataServices implements DataServicesInterface {
 		try {
 			
 			if ( request != null ) {
-				
 				r = restTemplateAPI().postForObject( integratorUri, request, RecordVO.class );
-				
 				if ( r == null || r.getResponse() == null ) {
 					st.setCode("200"); st.setDescription("No record found!"); r.setStatus( st );
 				}

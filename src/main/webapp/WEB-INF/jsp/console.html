@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>AMGREAT CONSOLE</title>
-	<link rel="stylesheet" href="../css/main.css" token="" id="">
-	<link rel="stylesheet" href="../css/face.css" token="" id="">
-	<script src="../js/jquery-3.7.1.min.js"></script>
-	<script src="../js/main.js" token="" id=""></script>
+	<link rel="stylesheet" href="/Users/admin/Documents/Apps/J2EEPROJECTS/springbootmvc/springbootmvc/src/main/resources/static/css/main.css" token="" id="">
+	<link rel="stylesheet" href="/Users/admin/Documents/Apps/J2EEPROJECTS/springbootmvc/springbootmvc/src/main/resources/static/css/face.css" token="" id="">
+	<script src="/Users/admin/Documents/Apps/J2EEPROJECTS/springbootmvc/springbootmvc/src/main/resources/static/js/jquery-3.7.1.min.js"></script>
+	<script src="/Users/admin/Documents/Apps/J2EEPROJECTS/springbootmvc/springbootmvc/src/main/resources/static/js/main.js" token="" id=""></script>
 	<style>
 		.box-1.contain{ border:0.2px solid #c0c0c0; border-radius:5px; width:100%; height:100%; margin-top:0px;margin-bottom:0px;margin:auto;}
 		.box-1.play{ border:0.2px solid #c0c0c0; border-radius:5px; height:95%; width:95%; margin-left:auto; margin-right:auto;margin-top:1.5%;}
@@ -20,10 +20,12 @@
 		
 	</style>
 </head>
-<body>
-		<div class="container-h h-05" id="CL1" style="z-index:17;">
+<body >
+<div class="container b1" id="CL1" style="z-index:17;margin:auto;">
+	<div class="col-1">
+		<div class="container-80 h-05 " id="CL1" style="z-index:17;margin:auto;">
 			<div class="col-5 txr ptr top-hamb p-8">
-				<div class="hambbox">
+				<div class="hambbox" targetpop="__popup" actiongo="__fshow" params="(this, event)" >
 					<div class="hamb" targetpop="__popup" id="__hamb1" onclick="__fshow(this, event);"></div>
 					<div class="hamb" targetpop="__popup" id="__hamb2" onclick="__fshow(this, event);"></div>
 					<div class="hamb" targetpop="__popup" id="__hamb3" onclick="__fshow(this, event);"></div>
@@ -35,12 +37,9 @@
 					<span class="linkuri br" id="contact" targetpop="content" actiongo="__fpage" params="('contact', 'param2', 'param3')">Contact</span>
 					<span class="linkuri br" id="solutions" targetpop="content" actiongo="__fpage" params="('solutions', 'param2', 'param3')">Solutions</span>
 					<span class="linkuri br" id="busapp" targetpop="content" actiongo="__fpage" params="('busapp', 'param2', 'param3')">Business Application</span>
-					<span class="linkuri br" id="dataplatform" targetpop="content" actiongo="__fpage" params="('dataplatform', 'param2', 'param3')">Data Platform</span>
-					<span class="linkuri br" id="security" targetpop="content" actiongo="__fpage" params="('param1', 'security', 'param3')">Security</span>
-					<span class="linkuri br" id="cloudtransformation" targetpop="content" actiongo="__fpage" params="('cloudtransformations', 'param2', 'param3')">Cloud Transformation</span>
 				</div>
 			</div>
-			<div class="col-5 txl" id="__r1c4" style="z-index:17;">
+			<div class="col-5 txr" id="__r1c4" style="z-index:17;">
 				<div class="linkurigrp mobile p-6">
 					<span class="linkuri" id="login" targetpop="content" actiongo="__fpage" params="('console.html', 'param2', 'param3')">Console</span>
 					<span class="linkuri" id="login" targetpop="content" actiongo="__fpage" params="('login', 'param2', 'param3')">Login</span>
@@ -48,26 +47,119 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="container h-03 mobile" id="CL2">
-			<div class="col-1" id="col-4">&nbsp;</div>
-		</div>	
-		
-		<div class="container h-9 mobilesize p-6" id="CL2">
-			<div class="col-5 m-2 mobile b1" id="col-4">
-				<div class="box-85 h-9 m-2 p-8overflow">
-					testscvs
-				</div>
+	</div>
+</div>
+		<div class="container h-03 mobile" id="CL2"> <div class="col-1" id="col-4">&nbsp;</div> </div>
+			
+		<div class="container-80 h-9 mobilesize p-6" style="margin:auto;" id="CL2">
+			<div class="col-4 m-0 mobile b1" id="col-4">
+				<div class="box-100 h-9 m-2 p-8 overflow">[[LEFTMENU]]</div>
 			</div>
-			<div class="col-80 m-2 b1 h-10" id="__content"> 
-				<div class="box-95 m-2 p-8 overflow"> 
-					<div class="box-95 m-0 p-8 b1 txr"> header </div>
-					<div class="box-95 m-0 h-8 p-8 b1 overflow"> content </div>
-					<div class="box-95 m-0 p-8 b1 txr"> button </div>	
+			<div class="col-70 m-0 mt-0 h-10" id="__content" style="margin:auto;">
+				<!--search--> 
+				<div class="box-100 m-2 h-4 mt-0 overflow b1" > 
+					<div class="box-100 m-0 p-8 b1 txr" id="[[__IDHEADER]]">
+						<div class="tablecss overflow">
+							<div class="box-100 rowplaincss"><div class="col-2 txl p-8">[[__FORMLABEL]]</div><div class="col-2 txr p-8">[[MENU]]</div></div>
+						</div>
+					</div>
+					<div class="box-100 m-0 h-8 p-8 txc" style="justify-content:center;" id="[[__CONTENT]]">
+						<div class="tablecss p-4 overflow" >
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8">[[__PAGING]]</div></div>
+								<div class="box-100 rowhcss" id="[[COLUMNS]]"><div class="colnocss txc">No</div> <div class="colcss">Label</div> </div>
+								<RECORDS class="col-1">
+								<div class="box-100 rowcss" id=""><div class="colnocss txc"></div> <div class="colnorecscss">no record found.</div></div>
+								</RECORDS>
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8"></div></div>
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8">[[__BUTTON]]</div></div>
+						</div>
+					</div>
+					<div class="box-95 m-0 p-8  txr"> </div>	
 				</div>
+				<!--add-->
+				<div class="box-100 m-2 h-4 mt-0 p-8 overflow b1" > 
+					<div class="box-100 m-0 p-8 b1 txr" id="[[__IDHEADER]]">
+						<div class="tablecss overflow">
+							<div class="box-100 rowplaincss"><div class="col-2 txl p-8">[[__FORMLABEL]]</div><div class="col-2 txr p-8">[[MENU]]</div></div>
+						</div>
+					</div>
+					<div class="box-100 m-0 h-8 p-8 txc" style="justify-content:center;" id="[[__CONTENT]]">
+						<div class="tablecss p-4 overflow" >
+								<PAGEFORM class="col-1">
+									<div class="box-100 rowcss"><div class="col-4 txl">ID:</div><div class="col-4 txc"></div><div class="col-4 txl">View Type:</div><div class="col-4 txc"></div> </div>
+									<div class="box-100 rowcss"><div class="col-4 txl">PID:</div><div class="col-4 txc"></div><div class="col-4 txl">View Template:</div><div class="col-4 txc"></div> </div>
+								</PAGEFORM>
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8"></div></div>
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8">[[BUTTON]]</div></div>
+						</div>
+					</div>
+					<div class="box-95 m-0 p-8  txr"> </div>	
+				</div>
+				<!--close add-->
+				<!--edit-->
+				<div class="box-100 m-2 h-4 mt-0 p-8 overflow b1" > 
+					<div class="box-100 m-0 p-8 b1 txr" id="[[__IDHEADER]]">
+						<div class="tablecss overflow">
+							<div class="box-100 rowplaincss"><div class="col-2 txl p-8">[[__FORMLABEL]]</div><div class="col-2 txr p-8">[[MENU]]</div></div>
+						</div>
+					</div>
+					<div class="box-100 m-0 h-8 p-8 txc" style="justify-content:center;" id="[[__IDCONTENT]]">
+						<div class="tablecss p-4 overflow" >
+								<PAGEFORM class="col-1">
+									<div class="box-100 rowcss"><div class="col-4 txl">ID:</div><div class="col-4 txc"></div><div class="col-4 txl">View Type:</div><div class="col-4 txc"></div> </div>
+									<div class="box-100 rowcss"><div class="col-4 txl">PID:</div><div class="col-4 txc"></div><div class="col-4 txl">View Template:</div><div class="col-4 txc"></div> </div>
+								</PAGEFORM>
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8"></div></div>
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8">[[BUTTON]]</div></div>
+						</div>
+					</div>
+					<div class="box-95 m-0 p-8  txr"> </div>	
+				</div>
+				<!--close edit-->
+				<!--preview-->
+				<div class="box-100 m-2 h-4 mt-0 p-8 overflow b1" > 
+					<div class="box-100 m-0 p-8 b1 txr" id="[[__IDHEADER]]">
+						<div class="tablecss overflow">
+							<div class="box-100 rowplaincss"><div class="col-2 txl p-8">[[__FORMLABEL]]</div><div class="col-2 txr p-8">[[MENU]]</div></div>
+						</div>
+					</div>
+					<div class="box-100 m-0 h-8 p-8 txc" style="justify-content:center;" id="[[__IDCONTENT]]">
+						<div class="tablecss p-4 overflow" >
+								<VIEW class="col-1">
+									<div class="box-100 rowcss"><div class="col-4 txl">ID:</div><div class="col-4 txc"></div><div class="col-4 txl">View Type:</div><div class="col-4 txc"></div> </div>
+									<div class="box-100 rowcss"><div class="col-4 txl">PID:</div><div class="col-4 txc"></div><div class="col-4 txl">View Template:</div><div class="col-4 txc"></div> </div>
+								</VIEW>
+								
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8"></div></div>
+								<div class="box-100 rowplaincss"><div class="colnorecscss txr p-8">[[BUTTON]]</div></div>
+						</div>
+					</div>
+					<div class="box-95 m-0 p-8  txr"> </div>	
+				</div>
+				<!--close preview-->
+				<!--button-->
+				<div class="box-100 m-2 h-4 mt-0 p-8 overflow b1" > 
+					<div class="box-100 m-0 p-8 b1 txr" id="[[__IDHEADER]]">
+						<div class="tablecss overflow">
+							<div class="box-100 rowplaincss"><div class="col-2 txl p-8">[[__FORMLABEL]]</div><div class="col-2 txr p-8">[[MENU]]</div></div>
+						</div>
+					</div>
+					<div class="box-100 m-0 h-8 p-8 txc" style="justify-content:center;" id="[[__IDCONTENT]]">
+						<div class="tablecss p-4 overflow txc" >
+								<div class="box-100 rowplaincss" id="[[__IDBUTTON]]">
+									<div  class="buttoncss" targetpop="[[TARGETPOP]]" actiongo="[[TARGETFUNCTION]]" params="[[PARAMS]]">SAVE</div> 
+									<div  class="buttoncss" targetpop="[[TARGETPOP]]" actiongo="[[TARGETFUNCTION]]" params="[[PARAMS]]">ADD</div>
+									<div  class="buttoncss" targetpop="[[TARGETPOP]]" actiongo="[[TARGETFUNCTION]]" params="[[PARAMS]]">EDIT</div> 
+									<div id="[[__IDBUTTON]]" class="buttoncss" targetpop="[[TARGETPOP]]" actiongo="[[TARGETFUNCTION]]" params="[[PARAMS]]">DELETE</div>
+								</div>
+						</div>
+					</div>
+					<div class="box-95 m-0 p-8  txr"> </div>	
+				</div>
+				<!--close button-->
+				
 			</div>
 		</div>
-		
 		<div class="container" id="CL4" style="z-index:7;">
 			<div class="col-1 txc p-8" id="col-8">&copy; PT AMGREAT INDONESIA </div>
 		</div>
@@ -105,7 +197,7 @@
 			  <span class="loader__element"></span>
 			</div>
 		</div>
-		
+
 </body>
 </html>
 	

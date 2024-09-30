@@ -1,7 +1,14 @@
+com/amgreat/mvc/vo/CommandVO.class
+com/amgreat/mvc/services/DataServicesInterface.class
 com/amgreat/mvc/controller/MainController.class
+com/amgreat/mvc/vo/AttributeVO.class
+com/amgreat/mvc/vo/ResponseVO.class
 com/amgreat/mvc/vo/PageVO.class
 com/amgreat/mvc/vo/StringVO.class
+com/amgreat/mvc/vo/RecordVO.class
+com/amgreat/mvc/services/DataServices.class
 com/amgreat/mvc/controller/WebConfiguration.class
+com/amgreat/mvc/vo/StatusVO.class
 com/amgreat/run/MainRunner.class
 com/amgreat/mvc/vo/Record.class
 com/amgreat/mvc/vo/Columns.class
@@ -9,6 +16,9 @@ com/amgreat/mvc/controller/WebController.class
 com/amgreat/mvc/vo/ListVO.class
 com/amgreat/mvc/services/CacheServicesInterface.class
 com/amgreat/mvc/vo/RecordStatusVO.class
+com/amgreat/mvc/vo/VO.class
 com/amgreat/mvc/controller/FECacheController.class
 com/amgreat/mvc/services/CacheServices.class
+com/amgreat/mvc/vo/RequestVO.class
+com/amgreat/mvc/controller/FERestController.class
 com/amgreat/mvc/services/UtilityServices.class

@@ -27,10 +27,10 @@
 	 
 	 function getEventDetail( e, el ) {
 	    var targ;
-	    if (!e) var e = window.event;
-	    if (e.target) targ = e.target;
-	     __el.id = e.srcElement.id;
-	     __el.value = document.getElementById( e.srcElement.id ).innerHTML;
+	    if (!e) {var e = window.event;}
+	    if (e.target) {targ = e.target;}
+	    __el.id = e.srcElement.id; 
+	    __el.value = document.getElementById( e.srcElement.id ).innerHTML;
 	};
 	
 	document.addEventListener('click', (e) => {
@@ -43,13 +43,14 @@
 	     var __params = document.getElementById( __el.id ).getAttribute("params");
 	     
 	     if( typeof __action !== 'undefined' && typeof __params !== 'undefined' ){
-			//eval( __action+"(" + __params + ")" );
-			eval( __action + __params  );
+	     	___p = __wrapParams( __params );  eval( __action + ___p );
 		}
 		
 	} , false);
-	
-	var __fpage = (_p1, _p2, _p3) => {
-			window.location.href = __ps.uri + _p1;
-	}
-	
+	var __wrapParams = (_p) => { var __arr = _p.split("|"); var __s = ""; for(i=0; i<__arr.length; i++){ __s+="'"+__arr[i]+"'"; __s="("+__s+")"; } return __s; }
+	var __fpagenew = (_p1, _p2, _p3) => { 
+		window.location.href = __ps.uri + _p1; 
+	};
+	var __fpageself = (_p1) => { 
+		window.open(_p1, '_self'); 
+	};

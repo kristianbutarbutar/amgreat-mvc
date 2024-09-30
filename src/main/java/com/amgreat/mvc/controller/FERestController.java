@@ -28,29 +28,26 @@ public class FERestController {
 			}
 		} else System.out.println(" vo.getRows is null ");
 	}
+	
 	@RequestMapping(value = "/amgreate/api/int/fe", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	public StringVO callCmd( @RequestBody RequestVO request ) {
 		RecordVO r = null; StringVO respond = new StringVO();
 		try {
 			if( request != null && request.getPageId() != null && !request.getPageId().trim().equals("") ) {
 				
-				request.setCmdString("s");
-				
-				r = integratorAPI.callData( request );
+				request.setCmdString("s");  r = integratorAPI.callData( request );
 				
 				//respond = new UtilityServices().wrapSelectively( r );
 				
 				respond = r.getRecordsInString();
-				
-				this.printStringVO( respond );
-				
 				respond.setCode("200");
-				
+				//this.printStringVO( respond );
+				/*
 				if ( respond != null ) {
 					ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
 					String json = ow.writeValueAsString( respond );
 	                System.out.println("JSON: " + json );
-				}
+				}*/
 			}
 		} catch (Exception e) {
 			System.out.println("[FERestController.callCmd]:" + e.getMessage());
